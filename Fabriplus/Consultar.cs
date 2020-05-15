@@ -48,5 +48,10 @@ namespace Fabriplus
         {
             tblPagos.DataSource = pagoService.ConsultarFecha(dateTimeFecha.Value.Date);
         }
+
+        private void btnGenerar_Click(object sender, EventArgs e)
+        {
+            pagoService.GenerarArchivo(dateTimeFecha.Value.Date);
+        }
     }
 }

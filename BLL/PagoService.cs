@@ -70,5 +70,9 @@ namespace BLL
         {
             return pagoRepository.SumaPagosContratistas();
         }
+        public void GenerarArchivo(DateTime fecha)
+        {
+            pagoRepository.GenerarArchivo(fecha);
+        }
     }
 }

@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimeFecha = new System.Windows.Forms.DateTimePicker();
+            this.btnGenerar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tblPagos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,11 +137,23 @@
             this.dateTimeFecha.TabIndex = 21;
             this.dateTimeFecha.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
+            // btnGenerar
+            // 
+            this.btnGenerar.Location = new System.Drawing.Point(509, 371);
+            this.btnGenerar.Name = "btnGenerar";
+            this.btnGenerar.Size = new System.Drawing.Size(96, 64);
+            this.btnGenerar.TabIndex = 22;
+            this.btnGenerar.Text = "GENERAR";
+            this.btnGenerar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnGenerar.UseVisualStyleBackColor = true;
+            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
+            // 
             // Consultar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(617, 520);
+            this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.dateTimeFecha);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -172,5 +185,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimeFecha;
+        private System.Windows.Forms.Button btnGenerar;
     }
 }

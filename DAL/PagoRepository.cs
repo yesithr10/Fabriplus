@@ -100,7 +100,19 @@ namespace DAL
         {
             return pagos.Where(l => l.FechaPago.Month == fecha.Month && l.FechaPago.Year == fecha.Year).ToList();
         }
-        
+        public void GenerarArchivo(DateTime fecha)
+        {
+            List<Pago> busquedaFecha = ConsultarFecha(fecha);
+            if (busquedaFecha.Count == 0)
+                return;
+            FileStream origenFlujo = new FileStream($"PAGOS{fecha.ToString("ddMMyyyy")}.txt", FileMode.OpenOrCreate, FileAccess.Write);
+            StreamWriter escritor = new StreamWriter(origenFlujo);
+
+            escritor.WriteLine($"Servicio publico;{SumaServicioPublico()};{CantidadServicioPublico()}");
+            escritor.WriteLine($"Compras a proveedores;{SumaComprasProveedores()};{CantidadComprasProveedores()}");
+            escritor.WriteLine($"Pagos a contratistas;{SumaPagosContratistas()};{CantidadPagosContratistas()}");
+            escritor.Close();
+        }
 
     }
 }
