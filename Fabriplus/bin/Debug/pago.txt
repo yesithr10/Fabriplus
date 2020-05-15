@@ -1,2 +1,2 @@
-Servicio publico;1;O;15/05/2020 9:33:01 a. m.;1000
-Pagos a contratistas;2;Eduer;15/05/2020;15000
+Compras a proveedores;1;Orlando;15/05/2020;10000000
+Compras a proveedores;2;Yesith;15/05/2020;10000

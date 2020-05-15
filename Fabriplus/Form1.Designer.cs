@@ -37,8 +37,9 @@
             this.txtIdentificacion = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtValorPagar = new System.Windows.Forms.TextBox();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.dateTimeFecha = new System.Windows.Forms.DateTimePicker();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTipoPago
@@ -120,6 +121,26 @@
             this.txtValorPagar.Size = new System.Drawing.Size(121, 20);
             this.txtValorPagar.TabIndex = 9;
             // 
+            // dateTimeFecha
+            // 
+            this.dateTimeFecha.Location = new System.Drawing.Point(162, 166);
+            this.dateTimeFecha.Name = "dateTimeFecha";
+            this.dateTimeFecha.Size = new System.Drawing.Size(121, 20);
+            this.dateTimeFecha.TabIndex = 11;
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Image = global::Fabriplus.Properties.Resources.loupe_78347;
+            this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnConsultar.Location = new System.Drawing.Point(187, 267);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(96, 71);
+            this.btnConsultar.TabIndex = 12;
+            this.btnConsultar.Text = "CONSULTAR";
+            this.btnConsultar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnGuardar
             // 
             this.btnGuardar.Image = global::Fabriplus.Properties.Resources.save_78348;
@@ -133,18 +154,12 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // dateTimeFecha
-            // 
-            this.dateTimeFecha.Location = new System.Drawing.Point(162, 166);
-            this.dateTimeFecha.Name = "dateTimeFecha";
-            this.dateTimeFecha.Size = new System.Drawing.Size(121, 20);
-            this.dateTimeFecha.TabIndex = 11;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 497);
+            this.ClientSize = new System.Drawing.Size(312, 376);
+            this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.dateTimeFecha);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtValorPagar);
@@ -177,6 +192,7 @@
         private System.Windows.Forms.TextBox txtValorPagar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.DateTimePicker dateTimeFecha;
+        private System.Windows.Forms.Button btnConsultar;
     }
 }
 

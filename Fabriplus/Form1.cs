@@ -42,9 +42,20 @@ namespace Fabriplus
             pago.TipoPago = cmbTipoPago.Text.Trim();
             pago.Identificacion = txtIdentificacion.Text.Trim();
             pago.Nombre = txtNombre.Text.Trim();
-            pago.Fecha = dateTimeFecha.Value;
+            pago.FechaPago = dateTimeFecha.Value;
             pago.ValorPagar = Convert.ToDouble(txtValorPagar.Text.Trim());
+            limpiar();
+        }
+        public void limpiar()
+        {
+            txtIdentificacion.Text = "";
+            txtNombre.Text = "";
+            txtValorPagar.Text = "";
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new Consultar().Visible = true;
         }
     }
 }

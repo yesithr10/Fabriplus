@@ -12,7 +12,7 @@ namespace Entity
         public string Identificacion { get; set; }
         public string Nombre { get; set; }
 
-        public DateTime Fecha;
+        public DateTime FechaPago { get; set; }
         public double ValorPagar { get; set; }
     }
 }

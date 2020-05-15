@@ -63,6 +63,16 @@ namespace Fabriplus.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap loupe_78347 {
+            get {
+                object obj = ResourceManager.GetObject("loupe_78347", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap save_78348 {
             get {
                 object obj = ResourceManager.GetObject("save_78348", resourceCulture);
