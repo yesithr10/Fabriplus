@@ -71,5 +71,9 @@ namespace DAL
         {
             return pagos.Sum(l => l.ValorPagar);
         }
+        public List<Pago> ConsultarFecha(DateTime fecha)
+        {
+            return pagos.Where(l => l.FechaPago.Month == fecha.Month && l.FechaPago.Year == fecha.Year).ToList();
+        }
     }
 }

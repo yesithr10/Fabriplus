@@ -35,6 +35,9 @@
             this.lblValorTotal = new System.Windows.Forms.Label();
             this.txtCantidadPagos = new System.Windows.Forms.TextBox();
             this.txtValorTotal = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimeFecha = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.tblPagos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +55,7 @@
             // 
             this.btnConsultar.Image = global::Fabriplus.Properties.Resources.loupe_78347;
             this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnConsultar.Location = new System.Drawing.Point(509, 278);
+            this.btnConsultar.Location = new System.Drawing.Point(509, 281);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(96, 71);
             this.btnConsultar.TabIndex = 13;
@@ -69,7 +72,7 @@
             "Servicio publico",
             "Compras a proveedores",
             "Pagos a contratistas"});
-            this.cmbTipoPago.Location = new System.Drawing.Point(33, 224);
+            this.cmbTipoPago.Location = new System.Drawing.Point(211, 219);
             this.cmbTipoPago.Name = "cmbTipoPago";
             this.cmbTipoPago.Size = new System.Drawing.Size(169, 21);
             this.cmbTipoPago.TabIndex = 14;
@@ -78,7 +81,7 @@
             // lblCantidadPagos
             // 
             this.lblCantidadPagos.AutoSize = true;
-            this.lblCantidadPagos.Location = new System.Drawing.Point(30, 262);
+            this.lblCantidadPagos.Location = new System.Drawing.Point(30, 259);
             this.lblCantidadPagos.Name = "lblCantidadPagos";
             this.lblCantidadPagos.Size = new System.Drawing.Size(152, 13);
             this.lblCantidadPagos.TabIndex = 15;
@@ -95,7 +98,7 @@
             // 
             // txtCantidadPagos
             // 
-            this.txtCantidadPagos.Location = new System.Drawing.Point(211, 259);
+            this.txtCantidadPagos.Location = new System.Drawing.Point(211, 256);
             this.txtCantidadPagos.Name = "txtCantidadPagos";
             this.txtCantidadPagos.Size = new System.Drawing.Size(100, 20);
             this.txtCantidadPagos.TabIndex = 17;
@@ -107,11 +110,40 @@
             this.txtValorTotal.Size = new System.Drawing.Size(100, 20);
             this.txtValorTotal.TabIndex = 18;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(30, 219);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Consutal por tipo: ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(30, 335);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 13);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Consultar por fecha: ";
+            // 
+            // dateTimeFecha
+            // 
+            this.dateTimeFecha.Location = new System.Drawing.Point(211, 328);
+            this.dateTimeFecha.Name = "dateTimeFecha";
+            this.dateTimeFecha.Size = new System.Drawing.Size(200, 20);
+            this.dateTimeFecha.TabIndex = 21;
+            this.dateTimeFecha.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
             // Consultar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 361);
+            this.ClientSize = new System.Drawing.Size(617, 375);
+            this.Controls.Add(this.dateTimeFecha);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtValorTotal);
             this.Controls.Add(this.txtCantidadPagos);
             this.Controls.Add(this.lblValorTotal);
@@ -137,5 +169,8 @@
         private System.Windows.Forms.Label lblValorTotal;
         private System.Windows.Forms.TextBox txtCantidadPagos;
         private System.Windows.Forms.TextBox txtValorTotal;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimeFecha;
     }
 }

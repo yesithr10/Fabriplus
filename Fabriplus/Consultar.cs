@@ -44,5 +44,9 @@ namespace Fabriplus
             txtValorTotal.Text = Convert.ToString(pagoService.SumarPagos());
         }
 
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            tblPagos.DataSource = pagoService.ConsultarFecha(dateTimeFecha.Value.Date);
+        }
     }
 }

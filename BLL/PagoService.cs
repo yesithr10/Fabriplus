@@ -17,11 +17,11 @@ namespace BLL
             bool seleccion = pagoRepository.Guardar(pago);
             if (seleccion == true)
             {
-                return "Guardado correctamente";
+                return "*Guardado correctamente*";
             }
             else
             {
-                return "No se pudo almacenar";
+                return "*No se pudo almacenar*";
             }
         }
         public List<Pago> Consultar()
@@ -40,6 +40,11 @@ namespace BLL
         public double SumarPagos()
         {
             return pagoRepository.SumarPagos();
+        }
+
+        public List<Pago> ConsultarFecha(DateTime fecha)
+        {
+            return pagoRepository.ConsultarFecha(fecha);
         }
     }
 }
