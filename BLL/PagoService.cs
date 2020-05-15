@@ -12,9 +12,17 @@ namespace BLL
     public class PagoService
     {
         PagoRepository pagoRepository = new PagoRepository();
-        public void Guardar(Pago pago)
+        public string Guardar(Pago pago)
         {
-            pagoRepository.Guardar(pago);
+            bool seleccion = pagoRepository.Guardar(pago);
+            if (seleccion == true)
+            {
+                return "Guardado correctamente";
+            }
+            else
+            {
+                return "No se pudo almacenar";
+            }
         }
         public List<Pago> Consultar()
         {

@@ -1,2 +1,4 @@
 Compras a proveedores;1;Orlando;15/05/2020;10000000
 Compras a proveedores;2;Yesith;15/05/2020;10000
+Servicio publico;2222;Mario;15/05/2020;50000
+Servicio publico;2222;Mario;15/05/2020;50000

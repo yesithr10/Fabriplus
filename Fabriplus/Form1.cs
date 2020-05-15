@@ -34,7 +34,9 @@ namespace Fabriplus
         {
             pago = new Pago();
             Guardar();
-            pagoService.Guardar(pago); 
+            pagoService.Guardar(pago);
+            string mensaje = pagoService.Guardar(pago);
+            MessageBox.Show(mensaje);
         }
 
         private void Guardar()
