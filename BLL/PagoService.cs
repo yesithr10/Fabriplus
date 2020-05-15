@@ -9,9 +9,9 @@ using Entity;
 namespace BLL
 {
     
-    public class PagosService
+    public class PagoService
     {
-        PagoRepository pagoRepository;
+        PagoRepository pagoRepository= new PagoRepository();
         public void Guardar(Pago pago)
         {
             pagoRepository.Guardar(pago); 

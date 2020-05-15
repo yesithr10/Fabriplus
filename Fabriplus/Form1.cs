@@ -23,5 +23,28 @@ namespace Fabriplus
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+        PagoService pagoService = new PagoService();
+        Pago pago;
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            pago = new Pago();
+            Guardar();
+            pagoService.Guardar(pago); 
+        }
+
+        private void Guardar()
+        {
+            pago.TipoPago = cmbTipoPago.Text.Trim();
+            pago.Identificacion = txtIdentificacion.Text.Trim();
+            pago.Nombre = txtNombre.Text.Trim();
+            pago.Fecha = dateTimeFecha.Value;
+            pago.ValorPagar = Convert.ToDouble(txtValorPagar.Text.Trim());
+
+        }
     }
 }

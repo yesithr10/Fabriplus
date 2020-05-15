@@ -1,0 +1,17 @@
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\bin\Debug\Fabriplus.exe.config
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\bin\Debug\Fabriplus.exe
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\bin\Debug\Fabriplus.pdb
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\bin\Debug\BLL.dll
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\bin\Debug\Entity.dll
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\bin\Debug\DAL.dll
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\bin\Debug\BLL.pdb
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\bin\Debug\Entity.pdb
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\bin\Debug\DAL.pdb
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\obj\Debug\Fabriplus.csprojAssemblyReference.cache
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\obj\Debug\Fabriplus.Form1.resources
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\obj\Debug\Fabriplus.Properties.Resources.resources
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\obj\Debug\Fabriplus.csproj.GenerateResource.cache
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\obj\Debug\Fabriplus.csproj.CopyComplete
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\obj\Debug\Fabriplus.exe
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\obj\Debug\Fabriplus.pdb
+C:\Users\Orlando Rojano\source\repos\Fabriplus\Fabriplus\obj\Debug\Fabriplus.Consultar.resources

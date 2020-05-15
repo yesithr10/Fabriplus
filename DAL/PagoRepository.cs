@@ -17,7 +17,7 @@ namespace DAL
             {
                 FileStream file = new FileStream(ruta, FileMode.Append);
                 StreamWriter escritor = new StreamWriter(file);
-                escritor.WriteLine($"{pago.TipoPago};{pago.Identificacion};{pago.Nombre};{pago.Fecha};{pago.ValorPagar}");
+                escritor.WriteLine($"{pago.TipoPago};{pago.Identificacion};{pago.Nombre};{pago.Fecha.ToString("dd/MM/yyyy")};{pago.ValorPagar}");
                 escritor.Close();
                 file.Close();
                 return true;
