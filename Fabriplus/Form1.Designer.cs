@@ -99,6 +99,7 @@
             this.cmbTipoPago.Name = "cmbTipoPago";
             this.cmbTipoPago.Size = new System.Drawing.Size(121, 21);
             this.cmbTipoPago.TabIndex = 5;
+            this.cmbTipoPago.SelectedIndexChanged += new System.EventHandler(this.cmbTipoPago_SelectedIndexChanged);
             // 
             // txtIdentificacion
             // 

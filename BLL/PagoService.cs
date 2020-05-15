@@ -46,5 +46,29 @@ namespace BLL
         {
             return pagoRepository.ConsultarFecha(fecha);
         }
+        public int CantidadServicioPublico()
+        {
+            return pagoRepository.CantidadServicioPublico();
+        }
+        public int CantidadComprasProveedores()
+        {
+            return pagoRepository.CantidadComprasProveedores();
+        }
+        public int CantidadPagosContratistas()
+        {
+            return pagoRepository.CantidadPagosContratistas();
+        }
+        public double SumaServicioPublico()
+        {
+            return pagoRepository.SumaServicioPublico();
+        }
+        public double SumaComprasProveedores()
+        {
+            return pagoRepository.SumaComprasProveedores();
+        }
+        public double SumaPagosContratistas()
+        {
+            return pagoRepository.SumaPagosContratistas();
+        }
     }
 }

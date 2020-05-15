@@ -60,5 +60,10 @@ namespace Fabriplus
         {
             new Consultar().Visible = true;
         }
+
+        private void cmbTipoPago_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

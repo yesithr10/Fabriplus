@@ -67,6 +67,31 @@ namespace DAL
         {
             return pagos.Count(); 
         }
+        public int CantidadServicioPublico()
+        {
+            return pagos.Where(p => p.TipoPago.Equals("Servicio publico")).Count();
+        }
+        public int CantidadComprasProveedores()
+        {
+            return pagos.Where(p => p.TipoPago.Equals("Compras a proveedores")).Count();
+        }
+        public int CantidadPagosContratistas()
+        {
+            return pagos.Where(p => p.TipoPago.Equals("Pagos a contratistas")).Count();
+        }
+
+        public double SumaServicioPublico()
+        {
+            return pagos.Where(p => p.TipoPago.Equals("Servicio publico")).Sum(p => p.ValorPagar);
+        }
+        public double SumaComprasProveedores()
+        {
+            return pagos.Where(p => p.TipoPago.Equals("Compras a proveedores")).Sum(p => p.ValorPagar);
+        }
+        public double SumaPagosContratistas()
+        {
+            return pagos.Where(p => p.TipoPago.Equals("Pagos a contratistas")).Sum(p => p.ValorPagar);
+        }
         public double SumarPagos()
         {
             return pagos.Sum(l => l.ValorPagar);
@@ -75,5 +100,7 @@ namespace DAL
         {
             return pagos.Where(l => l.FechaPago.Month == fecha.Month && l.FechaPago.Year == fecha.Year).ToList();
         }
+        
+
     }
 }
